@@ -7,9 +7,136 @@
 /* typo */
 body {
     font-family: 'Open Sans', sans-serif;
+    color: rgba(0,0,0,0.87);
+    font-size: 15px;
 }
 /* common */
 a {
     color: #3367d6;
     text-decoration: none;
+    display: inline-block;
+}
+
+/* header */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+/* top */
+.header_top {
+    height: 64px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.privacy_link img {
+    vertical-align: bottom;
+    height: 25px;
+    padding-left: 12px;
+}
+.privacy_link span {
+    font-size: 22px;
+    color: #5f6368;
+}
+.apps_link {
+    padding-right: 10px;
+}
+.g_apps {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+}
+.g_apps:hover {
+    background-color: rgba(60,64,67,0.08);
+}
+.apps_link i {
+    color: #5f6368;
+}
+.account {
+    height: 32px;
+    width: 32px;
+    background-color: #8d6e63;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+}
+.account:hover {
+    outline: 6px solid rgba(60,64,67,0.08);
+}
+.initial {
+    font-size: 16px;
+}
+
+/* bottom */
+.header_bottom {
+    border-bottom: 1px solid #c3c5ca;
+}
+.header_bottom ul {
+    list-style: none;
+    height: 100%;
+}
+.header_bottom li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 15px;
+    height: 100%;
+}
+.header_bottom a {
+    color: #5f6368;
+    font-weight: 600;
+    height: 100%;
+    padding-bottom: 6px;
+}
+.header_bottom a.active {
+    border-bottom: 3px solid #3367d6;
+}
+
+/* main */
+.container {
+    width: 65%;
+    margin: auto;
+    padding-top: 200px;
+}
+h2, h3 {
+    padding-bottom: 35px;
+    font-size: 25px;
+    color: #3c4043;
+}
+h3 {
+    font-size: 18px;
+    color: #3c4043;
+}
+p {
+    padding-bottom: 45px;
+}
+main ol {
+    margin: -10px 0 35px;
+    padding-left: 20px;
+}
+main ul {
+    margin-top: 25px;
+    padding-left: 20px;
+    list-style: none;
+}
+main ul li {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+main ul li:first-child:before {
+    content: "a.";
+    display: inline-block;
+    margin-left: -20px;
+}
+main ul li:last-child:before {
+    content: "b.";
+    display: inline-block;
+    margin-left: -20px;
 }
