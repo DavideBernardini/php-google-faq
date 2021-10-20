@@ -88,6 +88,9 @@ $faqs = [
         </p>"
     ]
 ];
+$languageOptions = [
+    "Afrikaans", "Bahasa Indonesia", "Bahasa Melayu", "Català", "Čeština", "Dansk", "Deutsch", "Eesti", "English-GB", "English (United Kingdom)", "Español-419", "Español (Latinoamérica)", "Euskaral", "Filipino", "Français-CA", "Français (Canada)", "Galego", "Hrvatski", "Isizulu", "Íslenska", "Italiano", "Kiswahili", "Latviešu", "Lietuvių", "Magyar", "Nederlands", "Norsk", "Polski", "Português (Brasil)", "Português (Portugal)", "Română", "Slovenčina", "Slovenščina-Latn", "Srpski", "Suomi", "Svenska", "Tiếng Việt", "Türkçe", "Ελληνικά", "Български", "Русский", "Српски", "Українська", "‫עברית‬", "‫اردو‬", "‫العربية‬", "‫فارسی‬", "አማርኛ", "मराठी", "हिन्दी", "বাংলা", "ગુજરાતી", "தமிழ்", "తెలుగు", "ಕನ್ನಡ", "മലയാളം", "ไทย", "한국어", "中文 (香港)", "中文（简体中文）", "中文（繁體中文）", "日本語"
+];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -160,16 +163,44 @@ $faqs = [
         <div class="container">
             <?php foreach ($faqs as $faq): ?>
             <h2>
-                <?= $faq['question'] ?>
+                <?= $faq['question']; ?>
             </h2>
             <div>
-                <?= $faq['answer'] ?>
+                <?= $faq['answer']; ?>
             </div>
             <?php endforeach; ?>
         </div>
     </main>
     <footer>
-        <div class="container"></div>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Google</a>
+                </li>
+                <li>
+                    <i class="fas fa-circle"></i>
+                    <a href="#">Tutto su Google</a>
+                </li>
+                <li>
+                    <i class="fas fa-circle"></i>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <i class="fas fa-circle"></i>
+                    <a href="#">Termini</a>
+                </li>
+            </ul>
+            <div class="language_chooice">
+                <i class="fas fa-comment-alt"></i>
+                <select name="language" id="language">
+                    <?php foreach($languageOptions as $language): ?>
+                        <option value="<?= $language; ?>">
+                            <?= $language; ?>
+                        </option>
+                    <?php endforeach ?>
+                </select>   
+            </div>
+        </div>
     </footer>
 </body>
 
