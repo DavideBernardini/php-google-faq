@@ -43,10 +43,16 @@ $faqs = [
                 La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
                 <ul>
                     <li>
-                        Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.
+                        <span>a.</span>
+                        <div>
+                            Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.
+                        </div>
                     </li>
                     <li>
-                        Google LLC, con sede negli Stati Uniti, per il resto del mondo.
+                        <span>a.</span>
+                        <div>
+                            Google LLC, con sede negli Stati Uniti, per il resto del mondo.
+                        </div>
                     </li>
                 </ul>
             </li>
@@ -85,6 +91,7 @@ $faqs = [
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -93,32 +100,36 @@ $faqs = [
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
     <!-- /google font -->
     <!-- fontawsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- /fontawsome -->
     <title>Google Faq</title>
 </head>
+
 <body>
     <!-- header -->
     <header>
         <!-- top -->
         <div class="header_top">
-                <a href="#" class="privacy_link">
-                    <img src="images/googlelogo_clr_74x24px.svg" alt="logo google">
-                    <span>Privacy e termini</span>
+            <a href="#" class="privacy_link">
+                <img src="images/googlelogo_clr_74x24px.svg" alt="logo google">
+                <span>Privacy e termini</span>
+            </a>
+            <div class="apps_link">
+                <a href="#" class="g_apps">
+                    <i class="fas fa-ellipsis-v"></i>
                 </a>
-                <div class="apps_link"> 
-                    <a href="#" class="g_apps">
-                        <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <a href="#">
-                        <div class="account">
-                            <div class="initial">D</div>
-                        </div>
-                    </a>
-                </div>
+                <a href="#">
+                    <div class="account">
+                        <div class="initial">D</div>
+                    </div>
+                </a>
+            </div>
         </div>
         <!-- /top -->
         <!-- bottom -->
@@ -152,10 +163,14 @@ $faqs = [
                 <?= $faq['question'] ?>
             </h2>
             <div>
-            <?= $faq['answer'] ?>
+                <?= $faq['answer'] ?>
             </div>
             <?php endforeach; ?>
         </div>
     </main>
+    <footer>
+        <div class="container"></div>
+    </footer>
 </body>
+
 </html>
